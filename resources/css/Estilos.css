@@ -1,0 +1,196 @@
+body, html{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 700px;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+header{
+    display: flex;
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 65px; 
+    width: 100%;
+    min-width: 1000px;
+    margin: 0px ;
+    padding: 0px;
+    justify-content: space-between;
+}
+main{
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+}
+footer{
+    display: flex;
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 50px;
+    width: 100%;
+    min-width: 1000px;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+}
+#logoIPN{
+    height: 120px;
+    width: 94px;
+    z-index: 9;
+    flex-grow: 0;
+}
+#logoCIC{
+    height: 122px;
+    width: 150px;
+    z-index: 9;
+    flex-grow: 0;
+}
+header h3 {
+    font-size: 15px;
+    text-align: center;
+}
+header div{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    height: 63px;
+    flex-grow: 1;
+}
+header h1{
+    flex-grow: 1;
+    text-align: center;
+}
+header div h3{
+    margin: 0px;
+}
+#columna{
+    background: linear-gradient(to right, #FFFFFF, #C9C9C9);
+    width: 20%;
+    min-height: 400px;
+    min-width: 200px;
+}
+#opciones{
+    margin: 20% 1%;
+    padding: 0px;
+    text-align: left;
+}
+#juego{
+    min-width: 800px;
+    width: 80%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: auto;
+}
+#seccion-tablero{
+    width: 60%;
+    min-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+#info-movimientos{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+#tablero-grande{
+    padding: 50px 0px;
+    border-spacing: 10px;
+}
+#tablero-grande-hidden{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-collapse: collapse;
+    visibility: hidden;
+}
+#tablero-grande-hidden td{
+    text-align: center;
+    height: 120px;
+    width: 120px;
+}
+.big-simbol{
+    font-size: 5em;
+}
+.casilla-mini{
+    width: 40px;
+    height: 40px;
+    border: solid 3px #A4A4A4;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    z-index: 100;
+}
+.tablero-mini{
+    border-collapse: collapse;
+}
+.tablero-mini .arriba{
+    border-top: 0px;
+}
+.tablero-mini .abajo{
+    border-bottom: 0px;
+}
+.tablero-mini .izquierda{
+    border-left: 0px;
+}
+.tablero-mini .derecha{
+    border-right: 0px;
+}
+.casilla-grande{
+    border: solid 5px #D8D8D8;
+    border-radius: 15px;
+}
+#contenedor-tableromini{
+    padding: 10px;
+}
+#movimientos{
+    border-collapse: collapse;
+    min-width: 300px;
+    text-align: center;
+}
+thead{
+    background-color: #E0F2F7;
+    opacity: 0.8;
+    border: solid 3px #E0F2F7;
+    border-radius: 7px;
+    border-collapse: collapse; 
+}
+#contenedor-tabla{
+    border: solid 2px #E0F2F7;
+    background-color: #EFFBFB;
+    border-radius: 7px;
+    margin: 60px 0px;
+    min-height: 400px;
+    min-width: 300px;
+}
+.simbol{
+    font-weight: bold;
+}
+#start-button{
+    border: solid 3px #2E2E2E;
+    background-color: #2E2E2E;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px 10px;
+    width: 90px;
+    margin: 100px auto;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+
+@media only screen and (max-width: 1150px){
+    #columna, #juego{
+        overflow: scroll;
+    }
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>META GATO   |   Inteligencia Artifical</title>
+    <link rel="stylesheet" href="resources/css/Estilos.css"  type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img id="logoIPN" src="./resources/images/LogoIPN.png" alt="">
+        <h1>META GATO</h1>
+        <div>
+            <h3>Centro de Investigación en Computación</h3>
+            <h3>Laboratorio de Inteligencia Artifical</h3>
+        </div>
+        <img id="logoCIC" src="./resources/images/LogoCIC.png" alt="">
+    </header>
+    <main>
+        <section id="columna">
+            <div id="opciones">
+                <h2>Opciones</h2>
+                <a href="http://idic.likufanele.com/~fundamentosia/">Página Principal</a>
+                <h4>Código a Subir:</h4>
+                <input type="file" name="" id="">
+                <h4>Código Subido:</h4>
+                <p id="file-name"></p>
+            </div>
+            <div id="start-button">Start</div>
+        </section>
+        <section id="juego">
+            <div id="seccion-tablero">
+                <table id="tablero-grande-hidden">
+                    <tr>
+                        <td class="casilla-grande-hidden arriba izquierda big-simbol"></td>
+                        <td class="casilla-grande-hidden arriba centro big-simbol"></td>
+                        <td class="casilla-grande-hidden arriba derecha big-simbol"></td>
+                    </tr>
+                    <tr>
+                        <td class="casilla-grande-hidden medio izquierda big-simbol"></td>
+                        <td class="casilla-grande-hidden medio centro big-simbol"></td>
+                        <td class="casilla-grande-hidden medio derecha big-simbol"></td>
+                    </tr>
+                    <tr>
+                        <td class="casilla-grande-hidden abajo izquierda big-simbol"></td>
+                        <td class="casilla-grande-hidden abajo centro big-simbol"></td>
+                        <td class="casilla-grande-hidden abajo derecha big-simbol"></td>
+                    </tr>
+                </table>
+                <table id="tablero-grande">
+                    <tr>
+                        <td class="casilla-grande arriba izquierda">
+                            <div id="contenedor-tableromini">
+                                <table class="tablero-mini">
+                                    <tr>
+                                        <td class="casilla-mini arriba izquierda"></td>
+                                        <td class="casilla-mini arriba centro"></td>
+                                        <td class="casilla-mini arriba derecha"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="casilla-mini medio izquierda"></td>
+                                        <td class="casilla-mini medio centro"></td>
+                                        <td class="casilla-mini medio derecha"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="casilla-mini abajo izquierda"></td>
+                                        <td class="casilla-mini abajo centro"></td>
+                                        <td class="casilla-mini abajo derecha"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td class="casilla-grande arriba centro">
+                            <div id="contenedor-tableromini">
+                                <table class="tablero-mini">
+                                    <tr>
+                                        <td class="casilla-mini arriba izquierda"></td>
+                                        <td class="casilla-mini arriba centro"></td>
+                                        <td class="casilla-mini arriba derecha"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="casilla-mini medio izquierda"></td>
+                                        <td class="casilla-mini medio centro"></td>
+                                        <td class="casilla-mini medio derecha"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="casilla-mini abajo izquierda"></td>
+                                        <td class="casilla-mini abajo centro"></td>
+                                        <td class="casilla-mini abajo derecha"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td class="casilla-grande arriba derecha">
+                            <div id="contenedor-tableromini">
+                                <table class="tablero-mini">
+                                    <tr>
+                                        <td class="casilla-mini arriba izquierda"></td>
+                                        <td class="casilla-mini arriba centro"></td>
+                                        <td class="casilla-mini arriba derecha"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="casilla-mini medio izquierda"></td>
+                                        <td class="casilla-mini medio centro"></td>
+                                        <td class="casilla-mini medio derecha"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="casilla-mini abajo izquierda"></td>
+                                        <td class="casilla-mini abajo centro"></td>
+                                        <td class="casilla-mini abajo derecha"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="casilla-grande medio izquierda">
+                            <div id="contenedor-tableromini">
+                                <table class="tablero-mini">
+                                    <tr>
+                                        <td class="casilla-mini arriba izquierda"></td>
+                                        <td class="casilla-mini arriba centro"></td>
+                                        <td class="casilla-mini arriba derecha"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="casilla-mini medio izquierda"></td>
+                                        <td class="casilla-mini medio centro"></td>
+                                        <td class="casilla-mini medio derecha"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="casilla-mini abajo izquierda"></td>
+                                        <td class="casilla-mini abajo centro"></td>
+                                        <td class="casilla-mini abajo derecha"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td class="casilla-grande medio centro">
+                            <div id="contenedor-tableromini">
+                                <table class="tablero-mini">
+                                    <tr>
+                                        <td class="casilla-mini arriba izquierda"></td>
+                                        <td class="casilla-mini arriba centro"></td>
+                                        <td class="casilla-mini arriba derecha"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="casilla-mini medio izquierda"></td>
+                                        <td class="casilla-mini medio centro"></td>
+                                        <td class="casilla-mini medio derecha"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="casilla-mini abajo izquierda"></td>
+                                        <td class="casilla-mini abajo centro"></td>
+                                        <td class="casilla-mini abajo derecha"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td class="casilla-grande medio derecha">
+                            <div id="contenedor-tableromini">
+                                <table class="tablero-mini">
+                                    <tr>
+                                        <td class="casilla-mini arriba izquierda"></td>
+                                        <td class="casilla-mini arriba centro"></td>
+                                        <td class="casilla-mini arriba derecha"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="casilla-mini medio izquierda"></td>
+                                        <td class="casilla-mini medio centro"></td>
+                                        <td class="casilla-mini medio derecha"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="casilla-mini abajo izquierda"></td>
+                                        <td class="casilla-mini abajo centro"></td>
+                                        <td class="casilla-mini abajo derecha"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="casilla-grande abajo izquierda">
+                            <div id="contenedor-tableromini">
+                                <table class="tablero-mini">
+                                    <tr>
+                                        <td class="casilla-mini arriba izquierda"></td>
+                                        <td class="casilla-mini arriba centro"></td>
+                                        <td class="casilla-mini arriba derecha"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="casilla-mini medio izquierda"></td>
+                                        <td class="casilla-mini medio centro"></td>
+                                        <td class="casilla-mini medio derecha"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="casilla-mini abajo izquierda"></td>
+                                        <td class="casilla-mini abajo centro"></td>
+                                        <td class="casilla-mini abajo derecha"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td class="casilla-grande abajo centro">
+                            <div id="contenedor-tableromini">
+                                <table class="tablero-mini">
+                                    <tr>
+                                        <td class="casilla-mini arriba izquierda"></td>
+                                        <td class="casilla-mini arriba centro"></td>
+                                        <td class="casilla-mini arriba derecha"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="casilla-mini medio izquierda"></td>
+                                        <td class="casilla-mini medio centro"></td>
+                                        <td class="casilla-mini medio derecha"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="casilla-mini abajo izquierda"></td>
+                                        <td class="casilla-mini abajo centro"></td>
+                                        <td class="casilla-mini abajo derecha"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td class="casilla-grande abajo derecha">
+                            <div id="contenedor-tableromini">
+                                <table class="tablero-mini">
+                                    <tr>
+                                        <td class="casilla-mini arriba izquierda"></td>
+                                        <td class="casilla-mini arriba centro"></td>
+                                        <td class="casilla-mini arriba derecha"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="casilla-mini medio izquierda"></td>
+                                        <td class="casilla-mini medio centro"></td>
+                                        <td class="casilla-mini medio derecha"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="casilla-mini abajo izquierda"></td>
+                                        <td class="casilla-mini abajo centro"></td>
+                                        <td class="casilla-mini abajo derecha"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="info-movimientos">
+                <div id="contenedor-tabla">
+                    <table id="movimientos">
+                        <thead>
+                            <tr>
+                                <td>Turno</td>
+                                <td>Jugador</td>
+                                <td>Casilla (Gde/Mini)</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Instituto Politécnico Nacional. Centro de Investigación en Computación</p>
+    </footer>
+    <script src="resources/javascript/Script.js"></script>
+</body>
+</html>
