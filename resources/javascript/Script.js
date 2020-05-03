@@ -294,8 +294,6 @@ function TurnOffCasillaGrande(casillaGrande, etiqueta) {
         casillaToOff.innerHTML = 'X';
     } else if (etiqueta === 'O') {
         casillaToOff.innerHTML = 'O';
-    } else{
-        casillaToOff.innerHTML = '-';
     }
     casillaToOff.style.visibility = 'visible';
     casillaToOff.style.zIndex = '100';
